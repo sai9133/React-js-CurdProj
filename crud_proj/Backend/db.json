@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "name": " Rama ",
+      "salary": "00000001",
+      "company": "ice-cream",
+      "id": 3
+    },
+    {
+      "name": "lucky",
+      "salary": "44444",
+      "company": "Beauty-care",
+      "id": 4
+    },
+    {
+      "name": "neela",
+      "salary": "11111111",
+      "company": "infosis",
+      "id": 5
+    },
+    {
+      "name": "bujji",
+      "salary": "99999999",
+      "company": "saiNagendra",
+      "id": 6
+    },
+    {
+      "name": "realme",
+      "salary": "345",
+      "company": "ef",
+      "id": 7
+    }
+  ]
+}
