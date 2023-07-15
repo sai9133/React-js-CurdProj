@@ -15,10 +15,7 @@ const App = () => {
         <Route path="/create" element={<CreateUser/>}></Route>
         <Route path="/user" element={<User/>}></Route>
         <Route path="/edit/:index" element={<Edituser/>}></Route>
-
-      </Routes>
-      
-      
+      </Routes> 
       
       </BrowserRouter>
     </div>

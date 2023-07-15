@@ -22,9 +22,13 @@ const CreateUser = () => {
   {
       setCompany(e.target.value)
   }
+
+
   function submithandler()
   {
     let payload={name,salary,company}
+
+      
     axios.post("http://localhost:3000/users",payload)
     .then(()=>
     {
@@ -46,6 +50,7 @@ const CreateUser = () => {
       <input type="text"  value={salary} onChange={salarydata}/> <br />
       <label htmlFor="">Company :</label>
       <input type="text" value={company} onChange={companydata}/> <br />
+
     <button onClick={submithandler}>submit</button>
     </article>
   </section>

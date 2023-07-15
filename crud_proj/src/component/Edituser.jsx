@@ -8,9 +8,9 @@ import { useNavigate, useParams } from "react-router-dom"
 
 const Edituser = () => {
     let[name,setName]=useState("")
-  let[salary,setSalary]=useState("")
-  let[company,setCompany]=useState("")
-  let navi=useNavigate()
+    let[salary,setSalary]=useState("")
+    let[company,setCompany]=useState("")
+     let navi=useNavigate()
 
 let {index}=useParams()
 console.log(index);
