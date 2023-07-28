@@ -1,0 +1,62 @@
+
+
+--> packages 
+---------------------------
+npm install json-server
+
+npm  install axios
+
+npm install react-router-dom
+
+--------------------------------------------------------------------
+
+--> create folder name as Backend in crud project folder
+ex:- This is  actual folder structure in crud project folder
+                                         
+Backend                                  -> right click-> new folder-> name as Backend
+node_modules
+public
+src
+.gitignore
+package.json
+package-lock.json
+README.md
+
+command for json to run:-
+npx json-server Backend/db.json --watch port 5000
+
+--> by default port number is 3000 so otherthan that we can take any portnumber. here im taking port number is 5000
+
+----> after enter command it gives structure like below
+
+-> Now press ctrl and place curser on http:..localhost:3000/users  
+-> it gives output in webpage
+-> dont close json server
+-> and copy that url path in webpage
+-> it usefull in axios post method
+  Resources
+  http://localhost:3000/users
+
+  Home
+  http://localhost:3000
+
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+
+GET /users 200 30.564 ms - 42
+GET /ws 404 17.537 ms - 2
+
+---------------------
+
+':' -> this qolon is concated with variable and url --> check in App component
+
+useparam :- (hook)
+to send data in url 
+before passing data in url we declare variable name in url initially.
+useNavigator:-(hook)
+-> to navigate one page to another page
+
+
+
+
+
