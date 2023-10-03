@@ -8,6 +8,7 @@ import {Link} from "react-router-dom"
 
 const User = () => {
   let [content,setContent]=useState([])
+  let user=JSON.parse(localStorage.getItem('user'))
 
   useEffect(()=>
   {
@@ -38,19 +39,19 @@ const User = () => {
         <div id={style.cards}>
           <table>
             <tr>
-              <th colSpan="2">USER ID:{x.id}</th>
+              <th colSpan="2">USER ID:{user.id}</th>
             </tr>
             <tr>
               <td>Name</td>
-              <td>:{x.name}</td>
+              <td>:{user.name}</td>
             </tr>
             <tr>
               <td>Salary</td>
-              <td>:{x.salary}</td>
+              <td>:{user.salary}</td>
               </tr>
             <tr>
             <td>Company</td>
-              <td>:{x.company}</td>
+              <td>:{user.company}</td>
             </tr>
             <tr>
               <td><Link to={`/edit/${x.id}`}>Edit</Link></td>

@@ -30,9 +30,10 @@ const CreateUser = () => {
 
       
     axios.post("http://localhost:3000/users",payload)
-    .then(()=>
+    .then((res)=>
     {
       console.log("DATA IS UPLOADED");
+      localStorage.setItem("user",JSON.stringify(res.data))
     })
     .catch(()=>
     {
